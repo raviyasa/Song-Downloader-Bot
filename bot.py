@@ -49,10 +49,10 @@ CMDS_TEXT = """
 """
 
 ABOUT_TEXT = """
-- **Bot :** `Song Downloader`
-- **Creator :** [MR-JINN-OF-TG](https://Github.com/MR-JINN-OF-TG)
-- **Support :** [CLICK HERE](https://telegram.me/NAZRIYASUPPORT)
-- **Source :** [CLICK HERE](https://github.com/MR-JINN-OF-TG/Song-Downloader-Bot)
+- **Bot :** `🎧 MUSIC ҒIΠDΣR 🎵`
+- **Creator :** [</> Rᴀᴠɪᴅᴜ Yᴀsᴀs 🇱🇰 </> {Oғғʟɪɴᴇ} ♰](https://t.me/darkz_hacker_devil)
+- **Support :** [Bᴏᴛ Sʜᴀᴅᴏᴡ ♾](https://t.me/media_bot_updates)
+- **Source :** 🔐
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
