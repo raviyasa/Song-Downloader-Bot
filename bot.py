@@ -59,10 +59,10 @@ ABOUT_TEXT = """
 
 """
 START_BUTTONS = InlineKeyboardMarkup(
-	[
+	[[
         InlineKeyboardButton('ADD ME TO GROUP', url=f"http://t.me/Shadows_Infinity_Music_Bot?startgroup=botstart") 
         ],
-        [[
+        [
         InlineKeyboardButton('Support📕', url=f"https://telegram.me/{Config.SUPPORT}"), 
         InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
         ],[
