@@ -24,10 +24,43 @@ Bot = Client(
 
 db = Database()
 
-START_TEXT = """ `Hai {}, 
-Am a YouTube Downloader Bot I Can Download Songs,Videos and Lyrics From YouTube and lyrics and  Would upload into Telegram. 
-Use /help Commands For More.`
-"""
+START_TEXT = """👋 Hey There {}
+
+🌷 This is Most Advanced Music Finder BOT, Keyword Searchers 😍
+
+🎧 FOᖇ MᑌSIᑕ ᒪOᐯ𝙴RS ✌️
+
+<b>☘️ Inline YouTube Music Search
+✍️ Keyword Music Search
+🪤 Inbox Supported
+🌺 Supported For Groups 
+🚀 More Fast Downloads
+🎁 Stock Every Downloaded Music
+♻️ 24 Hour Active</b>
+
+✍️ මේ BOT ගෙන් පුළුවන් ඕනෙම සින්දුවක් Search කරලා Download කරන්න. 😜  දැනටමත් ඔයාල Music Search BOT ලා ගොඩක් දැකල ඇතිනේ නේද. 😁 ඒත්.. මේක ගොඩක් විශේෂයි. මොකද , මේ BOT ගොඩක් speed 😉, 
+
+💁‍♂️ මෙහෙමයි දැන් ඔයාලට ඕනෙ මොකක් හරි සින්දුවක් මේ Botගෙන් ගන්න පුළුවන්.
+
+◇───────────────◇
+
+<b>Commands</b>
+
+ 🔥 /song 'Your Song's Name/YouTube Link' - To Find Songs.
+     Ex : /song lelena
+ 🔥 /video 'Your Song's Name/YouTube Link' - To Find Songs.
+    Ex : Video lelena
+ 🔥 /lyrics 'Your Lyric's Name' - To Download A Lyrics Of A Song.
+   Ex : /lyrics alone
+
+🙋‍♂️ Group Usage : Send /song with Song's name.
+
+◇───────────────◇
+
+☘️ DᕮᐯᕮᒪOᑭᕮR : [</> Rᴀᴠɪᴅᴜ Yᴀsᴀs 🇱🇰 </> {Oғғʟɪɴᴇ} ♰](https://t.me/darkz_hacker_devil)
+👻 [ʙᴏᴛ ꜱʜᴀᴅᴏᴡ ♾](https://t.me/media_bot_updates) 
+
+◇───────────────◇"""
 
 CMDS_TEXT = """
 `Here It is The List of Commamds and Its usage.`
@@ -60,7 +93,7 @@ ABOUT_TEXT = """
 """
 START_BUTTONS = InlineKeyboardMarkup(
 	[[
-        InlineKeyboardButton('ADD ME TO GROUP', url=f"http://t.me/Shadows_Infinity_Music_Bot?startgroup=botstart") 
+        InlineKeyboardButton('➕ ADD ME TO GROUP ➕', url=f"http://t.me/Shadows_Infinity_Music_Bot?startgroup=botstart") 
         ],
         [
         InlineKeyboardButton('Support📕', url=f"https://telegram.me/{Config.SUPPORT}"), 
@@ -208,7 +241,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("`AM...Uploading To TG now... Please Wait...`")
+    m.edit("`I AM...Uploading To TG now... Please Wait...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -222,7 +255,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**Something Went Wrong Report This at @NAZRIYASUPPORT!!**')
+        m.edit('**Something Went Wrong Report This at @helpingbotbyfatsgbot!!**')
         print(e)
     try:
         os.remove(audio_file)
