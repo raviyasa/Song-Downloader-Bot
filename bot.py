@@ -63,7 +63,7 @@ START_TEXT = """👋 Hey There {}
 ◇───────────────◇"""
 
 CMDS_TEXT = """
-`Here It is The List of Commamds and Its usage.`
+<b>Here It is The List of Commamds and Its usage.</b>
 
 - /song - This Command is For Downloading Songs. 
 - /lyrics - This Command is For Scrapping Lyrics of a Song. 
@@ -247,7 +247,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'❍📖 <b>Title:</b> <a href="{link}">{title}</a>\n❍⌚ <b>Duration:</b> <code>{duration}</code>\n❍📤 <b>Uploaded By:</b> <a href="https://t.me/Shadows_Infinity_Music_Bot">🎧 MUSIC ҒIΠDΣR 🎵</a>'
+        rep = f'❍📖 <b>Title:</b> <a href="{link}">{title}</a>\n\n◇───────────────◇\n\n❍⌚ <b>Duration:</b> <code>{duration}</code>\n❍📤 <b>Uploaded By:</b> <a href="https://t.me/Shadows_Infinity_Music_Bot">🎧 MUSIC ҒIΠDΣR 🎵</a>\nDeveloper : <a href="https://t.me/darkz_hacker_devil"></> Rᴀᴠɪᴅᴜ Yᴀsᴀs 🇱🇰 </> {Oғғʟɪɴᴇ} ♰</a>\n\n◇───────────────◇'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
